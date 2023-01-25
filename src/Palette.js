@@ -11,7 +11,6 @@ class Palette extends Component {
       <div className="Palette">
         {/* Navbar  */}
         <div className="Palette-colors">
-          {/* bunch of colour boxes */}
           {colorBoxes}
         </div>
         {/* footer */}
