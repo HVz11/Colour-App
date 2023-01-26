@@ -1,5 +1,5 @@
-// eslint import/no-anonymous-default-export: [2, {"allowArray": true}] 
-// eslint-disable-next-line import/no-anonymous-default-export
+/* eslint-disable import/no-anonymous-default-export */
+
 export default [
   {
     paletteName: "Material UI Colors",
