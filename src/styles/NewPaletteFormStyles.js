@@ -1,39 +1,58 @@
 import { DRAWER_WIDTH } from "../constant";
 const drawerWidth = DRAWER_WIDTH;
+
 const styles = (theme) => ({
   root: {
     display: "flex",
   },
-  appBar: {
-    transition: theme.transitions.create(["margin", "width"], {
+  drawer: {
+    width: drawerWidth,
+    flexShrink: 0,
+    height: "100vh",
+  },
+  drawerPaper: {
+    width: drawerWidth,
+    display: "flex",
+    alignItems: "center",
+  },
+  drawerHeader: {
+    display: "flex",
+    alignItems: "center",
+    width: "100%",
+    padding: "0 8px",
+    ...theme.mixins.toolbar,
+    justifyContent: "flex-end",
+  },
+  content: {
+    flexGrow: 1,
+    height: "calc(100vh - 64px)",
+    padding: 0,
+    transition: theme.transitions.create("margin", {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    height: "64px",
+    marginLeft: -drawerWidth,
   },
-  appBarShift: {
-    width: `calc(100% - ${drawerWidth}px)`,
-    marginLeft: drawerWidth,
-    transition: theme.transitions.create(["margin", "width"], {
+  contentShift: {
+    transition: theme.transitions.create("margin", {
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen,
     }),
+    marginLeft: 0,
   },
-  menuButton: {
-    marginLeft: 12,
-    marginRight: 20,
+  container: {
+    width: "90%",
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
   },
-  navBtns: {
-    marginRight: "1rem",
-    "& a": {
-      textDecoration: "none",
-    },
+  buttons: {
+    width: "100%",
   },
   button: {
-    margin: "0 0.5rem",
+    width: "50%",
   },
 });
 
