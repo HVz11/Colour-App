@@ -8,7 +8,7 @@ import { Snackbar } from "@material-ui/core";
 import { IconButton } from "@material-ui/core";
 import CloseIcon from "@mui/icons-material/Close";
 import styles from "./styles/NavbarStyles";
-import { withStyles } from "@material-ui/styles";
+import { withStyles } from "@material-ui/core/styles";
 
 class Navbar extends Component {
   constructor(props) {

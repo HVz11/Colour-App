@@ -11,7 +11,7 @@ import { Button } from "@material-ui/core";
 import DraggableColorList from "./DragableColorList";
 import { arrayMove } from "react-sortable-hoc";
 import ColorPickerForm from "./ColorPickerForm";
-import styles from "./styles/NewPaletteFormStyles"
+import styles from "./styles/NewPaletteFormStyles";
 
 class NewPaletteForm extends Component {
   static defaultProps = {
